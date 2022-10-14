@@ -11,11 +11,13 @@ const FeedbackSchema = new mongoose.Schema({
    },
    email:{
     type:String,
-    required:[true, 'Email field is required']
+    required:[true, 'Email field is required'],
+    unique:false
    },
    phone:{
     type:Number,
-    required:[true, 'Phone field is required']
+    required:[true, 'Phone field is required'],
+    unique:false
    },
    hostRating:{
     type:String,
